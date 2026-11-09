@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>About & Contact | Café ITECH</title>
+<!-- Author: Corey Weiss | Date: November 8, 2026 -->
+<style>
+:root{--brown:#38271f;--cream:#fff9f1;--accent:#ad633a}
+*{box-sizing:border-box}body{margin:0;background:var(--cream);color:var(--brown);font-family:Arial,sans-serif;line-height:1.6}
+header{background:var(--brown);color:white;padding:22px 7%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.brand{font-size:26px;font-weight:800}nav a{color:white;text-decoration:none;margin-left:22px;font-weight:bold}nav a:hover{color:#e6ba92}
+main{max-width:1050px;margin:auto;padding:30px 24px 70px}h1{font-size:52px;line-height:1.1;margin:10px 0 18px}h2{font-size:30px;margin-bottom:14px}p{color:#65584e}
+.hero{display:grid;grid-template-columns:1.2fr 1fr;gap:30px;align-items:center;padding:40px 0}
+.hero img{width:100%;border-radius:24px;box-shadow:0 12px 30px #38271f25}
+.tag{color:var(--accent);font-weight:bold;text-transform:uppercase;letter-spacing:2px}
+section{margin-top:48px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:white;border:1px solid #e8d9ca;border-radius:18px;padding:24px}
+.role{color:var(--accent);font-weight:bold}.contact{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.panel{background:#f0e3d4;border-radius:18px;padding:24px}details{background:white;border:1px solid #e8d9ca;border-radius:12px;padding:15px;margin-bottom:10px}
+summary{font-weight:bold;cursor:pointer}footer{background:var(--brown);text-align:center;padding:22px}footer p{color:white}
+@media(max-width:750px){.hero,.contact,.cards{grid-template-columns:1fr}nav a{margin:0 14px 0 0}}
+</style>
+</head>
+<body>
+<header><div class="brand">☕ Café ITECH</div><nav><a href="index.html">Home</a><a href="page2.html">Our Drinks</a><a href="page3.html">About & Contact</a></nav></header>
+<main>
+<section class="hero">
+<div><div class="tag">Get to know us</div><h1>Good drinks.<br>Better company.</h1><p>Café ITECH is a student-inspired café serving specialty coffees, creative refreshers, and drinks with a twist. We wanted a place where people can grab something different, study, or just hang out with friends.</p></div>
+<img alt="Illustration of a specialty coffee cup" src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=900&auto=format&fit=crop&q=80">
+</section>
+<section><div class="tag">Our beginnings</div><h2>Our Story</h2><p>Café ITECH started as an idea between three college students who wanted to create something different from the usual coffee shop. We love unique drinks, good coffee, and a place that feels welcoming. Our goal is to bring students and the community together one drink at a time.</p></section>
+<section><div class="tag">Behind the café</div><h2>Meet the Team</h2><div class="cards">
+<article class="card"><h3>Corey Weiss</h3><p class="role">Finance Manager</p><p>Helps manage the budget, set drink prices, and keep the business running smoothly.</p></article>
+<article class="card"><h3>Harrison Yim</h3><p class="role">Marketing Director</p><p>Creates promotions and helps people learn about our specialty drinks.</p></article>
+<article class="card"><h3>Nikki Le</h3><p class="role">Technology Manager</p><p>Manages our website and makes it easy for customers to explore the café.</p></article>
+</div></section>
+<section><div class="tag">Say hello</div><h2>Contact & Hours</h2><div class="contact">
+<div class="panel"><h3>Contact Us</h3><p><strong>Email:</strong> hello@cafeitech.example</p><p><strong>Phone:</strong> (555) 010-2026</p><p><strong>Location:</strong> 100 Campus Way, Columbia, SC (fictional)</p><p><strong>Instagram:</strong> @cafeitech (fictional)</p></div>
+<div class="panel"><h3>Hours of Operation</h3><p><strong>Monday–Friday:</strong> 7 AM – 8 PM</p><p><strong>Saturday:</strong> 9 AM – 6 PM</p><p><strong>Sunday:</strong> 9 AM – 6 PM</p></div>
+</div></section>
+<section><div class="tag">Common questions</div><h2>Frequently Asked Questions</h2>
+<details><summary>Can I customize my drink?</summary><p>Absolutely! Choose your flavors, sweetness, and milk to make it your own.</p></details>
+<details><summary>Do you offer student discounts?</summary><p>Yes! Our fictional café offers 10% off specialty drinks with a student ID.</p></details>
+<details><summary>Can I order online?</summary><p>We're working on it. For now, come visit us in person!</p></details>
+</section>
+</main><footer><p>© 2026 Café ITECH • ITEC 101 class project • Fictional business</p></footer>
+</body></html>

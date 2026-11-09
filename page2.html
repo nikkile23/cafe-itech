@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe iTech | Products & Services</title>
+    
+    <!-- 
+        Harrison Yim
+        Page 2
+    -->
+    
+    <style>
+        /* Global styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f7fa;
+            color: #2c3e50;
+            line-height: 1.6;
+        }
+
+        /* Header styling */
+        header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            color: #ffffff;
+            padding: 25px 20px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+            color: #00d9ff;
+        }
+
+        header p {
+            margin: 8px 0 0;
+            font-size: 1.1rem;
+            color: #a0c4ff;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #0f3460;
+            padding: 12px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 18px;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #00d9ff;
+        }
+
+        /* Main content */
+        main {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        /* Section headings */
+        h2 {
+            color: #0f3460;
+            border-bottom: 3px solid #00d9ff;
+            padding-bottom: 8px;
+            margin-top: 40px;
+            font-size: 1.8rem;
+        }
+
+        /* Hero / Intro image */
+        .hero-image {
+            width: 100%;
+            max-height: 320px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+            margin-bottom: 10px;
+        }
+
+        .image-caption {
+            text-align: center;
+            font-style: italic;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        /* Product cards grid */
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 25px;
+        }
+
+        .product-card {
+            background-color: #ffffff;
+            border-radius: 12px;
+            padding: 22px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            border-top: 5px solid #00d9ff;
+            transition: transform 0.25s, box-shadow 0.25s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+        }
+
+        .product-card h3 {
+            margin-top: 0;
+            color: #1a1a2e;
+            font-size: 1.35rem;
+        }
+
+        .price {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: #0f3460;
+            margin: 10px 0;
+        }
+
+        .product-card p {
+            color: #555;
+            font-size: 0.95rem;
+        }
+
+        /* How It Works section */
+        .process-steps {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 25px;
+        }
+
+        .step {
+            flex: 1;
+            min-width: 220px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            padding: 25px 20px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .step-number {
+            background-color: #00d9ff;
+            color: #1a1a2e;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0 auto 15px;
+        }
+
+        .step h3 {
+            color: #0f3460;
+            margin: 0 0 10px;
+        }
+
+        /* Promo / Featured section */
+        .promo-box {
+            background: linear-gradient(135deg, #1a1a2e, #0f3460);
+            color: #ffffff;
+            border-radius: 12px;
+            padding: 30px;
+            margin-top: 40px;
+            text-align: center;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .promo-box h2 {
+            color: #00d9ff;
+            border-bottom: none;
+            margin-top: 0;
+        }
+
+        .promo-code {
+            display: inline-block;
+            background-color: #00d9ff;
+            color: #1a1a2e;
+            font-weight: bold;
+            font-size: 1.4rem;
+            padding: 10px 25px;
+            border-radius: 8px;
+            margin: 15px 0;
+            letter-spacing: 2px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1a1a2e;
+            color: #a0c4ff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+            font-size: 0.95rem;
+        }
+
+        footer a {
+            color: #00d9ff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Cafe iTech</h1>
+        <p>Where Code Meets Coffee</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="page2.html">Products &amp; Services</a>
+        <a href="page3.html">About &amp; Contact</a>
+    </nav>
+
+    <main>
+        <h1>Our Products &amp; Services</h1>
+        <p>Fuel your next big idea with expertly crafted drinks and bites designed for students, developers, and creatives. Every item on our menu is named after the tech world we love.</p>
+
+        <!-- Hero image related to the business -->
+        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1100&h=400&fit=crop" 
+             alt="Freshly made coffee at Cafe iTech" 
+             class="hero-image">
+        <p class="image-caption">Freshly pulled espresso and creative drinks — the perfect coding companion.</p>
+
+        <!-- Catalog / Menu -->
+        <h2>The Menu</h2>
+        <p>Choose from our signature tech-inspired drinks and snacks. All prices are listed below.</p>
+
+        <div class="menu-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <h3>Binary Brew</h3>
+                <p class="price">$4.50</p>
+                <p>Our classic house coffee. Smooth, bold, and perfectly balanced — just like clean code. Available hot or iced.</p>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <h3>Pixel Latte</h3>
+                <p class="price">$5.25</p>
+                <p>Velvety espresso mixed with steamed milk and a touch of vanilla. Topped with pixel-perfect latte art.</p>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <h3>Quantum Cappuccino</h3>
+                <p class="price">$5.75</p>
+                <p>Our bestseller! Rich espresso, silky foam, and a sprinkle of cinnamon. Order it and watch your energy levels go superpositional.</p>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card">
+                <h3>Algorithm Affogato</h3>
+                <p class="price">$6.50</p>
+                <p>A scoop of vanilla gelato drowned in a shot of hot espresso. The perfect “solution” to any afternoon crash.</p>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product-card">
+                <h3>Debugging Green Tea</h3>
+                <p class="price">$3.75</p>
+                <p>Light, refreshing matcha green tea. Helps you stay calm while hunting down those stubborn bugs.</p>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="product-card">
+                <h3>Code &amp; Cream Donut</h3>
+                <p class="price">$3.25</p>
+                <p>Soft yeast donut glazed with chocolate and filled with cream. Because every great project deserves a sweet reward.</p>
+            </div>
+        </div>
+
+        <!-- How It Works -->
+        <h2>How It Works</h2>
+        <p>Getting your favorite Cafe iTech items is simple and fast.</p>
+
+        <div class="process-steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>Order Online</h3>
+                <p>Browse the menu on our site or mobile app and place your order in seconds.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>We Craft It</h3>
+                <p>Our baristas carefully prepare your drink or snack with precision and care.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>Pickup or Delivery</h3>
+                <p>Grab it at the counter or have it delivered right to your dorm or study spot.</p>
+            </div>
+        </div>
+
+        <!-- Special Promo / Featured Item -->
+        <div class="promo-box">
+            <h2>Featured Promo</h2>
+            <p>Try our <strong>Quantum Cappuccino</strong> — the crowd favorite!</p>
+            <p>Use code <span class="promo-code">ITECH20</span> at checkout for <strong>20% off</strong> any drink this week.</p>
+            <p>Valid for online and in-store orders. Limited time only!</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Cafe iTech &mdash; Where Code Meets Coffee</p>
+        <p>
+            <a href="index.html">Home</a> | 
+            <a href="page2.html">Products</a> | 
+            <a href="page3.html">About &amp; Contact</a>
+        </p>
+    </footer>
+
+</body>
+</html>
